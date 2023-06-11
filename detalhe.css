@@ -1,0 +1,154 @@
+
+
+
+
+body{
+    background-image: url('IMG/solid-concrete-wall-textured-backdrop.jpg');
+      background-repeat: no-repeat;
+      background-size: auto;    
+  }
+  .navbar-dark {
+    background-color: #4b3621;
+  }
+  .btn-buscar {
+    background-color: black;
+    outline: none; 
+  }
+  
+  
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+    #cards{
+      display: inline-block;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: center;
+      margin-left: 50px;
+      
+  
+    }
+    
+    .card{
+      display: inline-block;
+      margin-top: 2em;
+      width: 83%;
+      box-shadow: 0 0 4px 3px #4b3621;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      margin-left: 70px;  
+    }
+   
+  
+    .title{
+      font-size: 1.3rem;
+    }
+    .category,.price{
+      font-weight: bold;
+      text-transform: capitalize;
+      margin:1em;
+      font-size: 1.2rem;
+  
+    }
+  
+  
+  
+  
+    .footer {
+      margin-top: 100px;
+    }
+  
+    /* footer*/
+  
+   
+    *{
+      margin:0;
+      padding: 0;
+       box-sizing: border-box;
+       letter-spacing: 1px;
+    }
+    footer{
+      width: 100%;
+      color: white;
+    }
+  
+    #footer-content{
+      background-color: #4b3621;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 3rem 3.5rem;
+  
+  }
+  #footer-contacts{
+      margin-bottom: 0.75rem;
+  }
+  
+  #footer-social-media{
+      
+      display: flex;
+      gap: 2rem;
+      margin-top: 1.5rem;
+  }
+  
+  #footer-social-media .footer-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.5rem;
+      width: 2.5rem;
+      color: white;
+      border-radius: 50%;
+  }
+  
+  #instagram{
+      background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  }
+  
+  #facebook{
+      background-color: #4267b3;
+  }
+    
+  #whatsapp{
+      background-color: #25d366;
+  }
+  
+  #footer-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #footer-info span {
+    font-weight: bold;
+    display: block; /* Colocar cada linha em um bloco separado */
+    white-space: nowrap; /* Evitar quebrar a linha */
+  }
+  #footer-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Evitar quebrar a linha */
+  }
+  
+  #footer-info p {
+    margin: 0;
+    line-height: 1.5;
+  }
+    
+  @media screen and (max-width: 768px){
+      #footer-content{
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+      }
+  }
+  @media screen and (max-width: 426px){
+      #footer-content{
+          grid-template-columns: repeat(1, 1fr);
+          padding: 3rem 2rem;
+      }
+  }
+      
+      
+  
+  

@@ -1,26 +1,28 @@
-fetch('https://fakestoreapi.com/products')
-  .then(res => res.json())
-  .then(completedata => {
-    let data1 = "";
-    completedata.forEach(values => {
-      data1 += `
-        <div class="card">
-          <h1 class="title">${values.title}</h1>
-          <img src="${values.image}" alt="img">
-          <p>${values.description}</p>
-          <p class="category">${values.category}</p>
-          <p class="price">${values.price}</p>
-          <button onclick="redirectToProductDetails(${values.id})">Detalhes</button>
-        </div>
-      `;
-    });
-    document.getElementById("cards").innerHTML = data1;
-  })
-  .catch(err => {
-    console.log(err);
-  });
+const search = document.getElementById('inputSearch');
+const buttonSearch = document.getElementById('button-addon2');
+const mosaicContainer = document.getElementById('mosaic');
 
-function redirectToProductDetails(productId) {
-  // Redirecionar para a página de detalhes do produto
-  window.location.href = `product-details.html?id=${productId}`;
+async function searchProducts() {
+    try {
+        const response = await fetch('https://diwserver.vps.webdock.cloud/products');
+        const data = await response.json();
+        const products = data.products.slice(0, 9);
+
+        const cards = products.map(product => `
+            <div class="card">
+            <a href="detalhe.html?id=${product.id}">
+                    <h1 class="title">${product.title}</h1>
+                </a>
+                <img src="${product.image}" height="300" alt="img">
+                <p class="category">${product.category}</p>
+                <p class="price">${product.price}</p>
+            </div>
+        `);
+
+        mosaicContainer.innerHTML = cards.join('');
+    } catch (error) {
+        console.error('Error fetching products:', error);
+    }
 }
+
+searchProducts();

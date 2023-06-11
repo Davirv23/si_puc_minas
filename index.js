@@ -1,6 +1,6 @@
 const search = document.getElementById('inputSearch');
-const buttonSearch = document.getElementById('button-addon2');
-const mosaicContainer = document.getElementById('mosaic');
+const buttonSearch = document.getElementById('button');
+const mosaicContainer = document.getElementById('produts');
 
 async function searchProducts() {
     try {
@@ -15,7 +15,7 @@ async function searchProducts() {
                 </a>
                 <img src="${product.image}" height="300" alt="img">
                 <p class="category">${product.category}</p>
-                <p class="price">${product.price}</p>
+                <p class="price"> R$: ${product.price}</p>
             </div>
         `);
 
@@ -26,3 +26,5 @@ async function searchProducts() {
 }
 
 searchProducts();
+
+

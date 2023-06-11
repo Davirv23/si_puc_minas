@@ -12,7 +12,7 @@ function getProductDetails() {
             <h1 class="title">${product.title}</h1>
             <img src="${product.image}" height="300" alt="img">
             <p class="category">${product.category}</p>
-            <p class="price">${product.price}</p>
+            <p class="price"> R$: ${product.price}</p>
             <p class="description">${product.description}</p>
           </div>
         `;

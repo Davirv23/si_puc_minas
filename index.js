@@ -1,4 +1,4 @@
-fetch('https://diwserver.vps.webdock.cloud/products')
+fetch('https://fakestoreapi.com/products')
   .then(res => res.json())
   .then(completedata => {
     let data1 = "";

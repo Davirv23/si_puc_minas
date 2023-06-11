@@ -47,6 +47,7 @@ body{
     padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    ;
   }
   
   @media (min-width: 576px) {

@@ -6,7 +6,7 @@ async function searchProducts() {
     try {
         const response = await fetch('https://diwserver.vps.webdock.cloud/products');
         const data = await response.json();
-        const products = data.products.slice(0, 9);
+        const products = data.products.slice(0, 11);
 
         const cards = products.map(product => `
             <div class="card">

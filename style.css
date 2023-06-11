@@ -3,7 +3,7 @@
 
 
 body{
-  background-image: url('IMG/solid-concrete-wall-textured-backdrop.jpg');
+  background-color: black;
     background-repeat: no-repeat;
     background-size: auto;    
 }
@@ -32,17 +32,46 @@ body{
 
   }
   
-  .card{
+  #cards.container {
     display: inline-block;
-    margin-top: 2em;
-    width: 23%;
-    box-shadow: 0 0 4px 3px #4b3621;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    margin-left: 70px;  
+    flex-wrap: wrap;
+    justify-content:center;
   }
- 
-
+  
+  .card {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 50px; ;
+    margin-bottom: 20px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 576px) {
+    .card {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: calc(33.33% - 10px);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: calc(25% - 10px);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      width: calc(20% - 10px);
+    }
+  }
   .title{
     font-size: 1.3rem;
   }

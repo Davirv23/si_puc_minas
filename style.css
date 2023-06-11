@@ -1,40 +1,62 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
+
 
 
 
 body{
-    background-image: url("IMG/background\ body.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: auto;    
 }
-
-.card-wrapper {
-  max-width: 300px;
+.navbar-dark {
+  background-color: #4b3621;
 }
-.card-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    color: #141a6e;
+.btn-buscar {
+  background-color: black;
+  outline: none; 
+}
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
-  .card {
-    margin-bottom: 20px;
+  #cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: center;
+    margin-left: 50px;
+    
+
   }
   
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
+  .card{
+    margin-top: 2em;
+    width: 23%;
+    box-shadow: 0 0 4px 3px #4b3621;
+    padding: 1.5em;
+    margin-bottom: 2em;
   }
-  .custom-card-deck .card {
-    width: 18rem; /* ajuste o tamanho como desejar */
+ 
+
+  .title{
+    font-size: 1.3rem;
   }
+  .category,.price{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin:1em;
+    font-size: 1.2rem;
+
+  }
+
+
+
+
   .footer {
-    margin-top: auto;
+    margin-top: 100px;
   }
 
   /* footer*/
@@ -52,7 +74,7 @@ body{
   }
 
   #footer-content{
-    background-color:black;
+    background-color: #4b3621;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -89,6 +111,27 @@ body{
   
 #whatsapp{
     background-color: #25d366;
+}
+
+#footer-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#footer-info span {
+  font-weight: bold;
+  display: block; /* Colocar cada linha em um bloco separado */
+  white-space: nowrap; /* Evitar quebrar a linha */
+}
+#footer-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Evitar quebrar a linha */
+}
+
+#footer-info p {
+  margin: 0;
+  line-height: 1.5;
 }
   
 @media screen and (max-width: 768px){
